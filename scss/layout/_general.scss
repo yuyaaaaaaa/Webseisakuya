@@ -1,0 +1,48 @@
+body {
+  font-family: 'Hiragino Kaku Gothic ProN';
+  color: cl(text);
+}
+
+a {
+  color: cl(text);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.cmn-btn {
+  background-color: cl(base);
+  border-radius: 18px;
+  border: 1px solid cl(text);
+  display: inline-block;
+  transition: all 0.5s ease;
+  a {
+    transition: all 0.5s ease;
+  }
+  &:hover {
+    background-color: cl(hover);
+    a {
+      color: cl(white);
+    }
+  }
+}
+
+.cmn-title {
+  text-align: center;
+  h2:nth-child(1) {
+    font-size: 40px;
+  }
+  h2:nth-child(2) {
+    font-size: 20px;
+    padding-top: 10px;
+    text-transform: capitalize;
+  }
+}
