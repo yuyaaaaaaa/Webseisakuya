@@ -30,6 +30,7 @@ li {
   border: 1px solid #707070;
   display: inline-block;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .cmn-btn span {
