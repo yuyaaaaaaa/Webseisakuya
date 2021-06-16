@@ -41,7 +41,7 @@ li {
   background-color: #e5c2c2;
 }
 
-.cmn-btn:hover a {
+.cmn-btn a:hover {
   color: #ffff;
 }
 
@@ -461,7 +461,6 @@ li {
 
 .top-description .top-contact-btn a {
   font-size: 40px;
-  font-weight: bold;
   padding: 12px 18px;
 }
 
