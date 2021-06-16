@@ -5,20 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Webseisakuya</title>
-  <link rel="stylesheet" href=" https://yuyaaaaaaa.github.io/Webseisakuya/scss/reset.css">
-  <link rel="stylesheet" href=" https://yuyaaaaaaa.github.io/Webseisakuya/scss/style.css">
-  <link rel="stylesheet" href=" https://yuyaaaaaaa.github.io/Webseisakuya/js/AOS-dist/aos.css">
+  <link rel="stylesheet" href="/scss/reset.css">
+  <link rel="stylesheet" href="/scss/style.css">
+  <link rel="stylesheet" href="/js/AOS-dist/aos.css">
 </head>
 <body>
   <header class="header">
-    <div class="image-logo"><a href="#"><img src=" https://yuyaaaaaaa.github.io/Webseisakuya/images/Webseisakuya.png" alt="Webseisakuya"></a></div>
+    <div class="image-logo"><a href="#"><img src="/images/Webseisakuya.png" alt="Webseisakuya"></a></div>
     <div class="header-nav">
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item" data-aos="slide-left" data-aos-duration="800"><span>|</span><a href="#">concept</a></li>
-          <li class="nav-item" data-aos="slide-left" data-aos-duration="1000"><span>|</span><a href="#">service</a></li>
-          <li class="nav-item" data-aos="slide-left" data-aos-duration="1200"><span>|</span><a href="#">price</a></li>
-          <li class="nav-item" data-aos="slide-left" data-aos-duration="1400"><span>|</span><a href="#">works</a></li>
+          <li class="nav-item" data-aos="slide-left" data-aos-duration="1000"><span>|</span><a href="#service" class="href-btn">service</a></li>
+          <li class="nav-item" data-aos="slide-left" data-aos-duration="1200"><span>|</span><a href="#price" class="href-btn">price</a></li>
+          <li class="nav-item" data-aos="slide-left" data-aos-duration="1400"><span>|</span><a href="#works" class="href-btn">works</a></li>
           <li class="nav-item" data-aos="slide-left" data-aos-duration="1600"><span>|</span><a href="#">contact</a><span>|</span></li>
         </ul>
       </nav>
@@ -33,6 +33,7 @@
   <main>
     <div class="top">
       <div class="top-image">
+        <div class="catch-copy">Webサイト制作のことならお任せください</div>
         <div class="top-container" data-aos="fade">
           <div class="top-message">
             <strong class="top-1">「こうしてほしい」</strong>
@@ -50,7 +51,7 @@
       </div>
     </div>
 
-    <section class="service-section">
+    <section class="service-section cmn-section" id="service">
       <div class="service-title cmn-title">
         <h2>サービス</h2>
         <h2>- service -</h2>
@@ -58,14 +59,26 @@
       <div class="service-wrap" data-aos="slide-up">
         <ul class="service-list">
           <li class="service-item">
-            <div class="service-image sitecliate">
+            <div class="service-image sitecreate">
               <div class="service-color">
                 <div class="service-item-container">
                   <em class="service-item-title">サイト作成</em>
                   <div class="service-item-description">Wedサイトの作成をデザインからコーディング、WordPressの移行まで、幅広く承らせていただきます。<br><br>
                     Webサイトを公開するにあたって、ドメイン取得やサーバーの運用もお任せください。</p></div>
-                  <div class="service-btn cmn-btn"><a href="#">サイト作成について</a></div>
+                  <div class="service-btn cmn-btn sitecreate-btn"><span>サイト作成について</span></div>
                 </div>
+              </div>
+            </div>
+            <div class="service-modal sitecreate-modal">
+              <div class="modal-container">
+                <h3>- Webサイト作成 -</h3>
+                <ul class="modal-discription">
+                  <li><span>デザイン</span><p>ご用件・ご要望を丁寧にお伺いし、お客様のイメージと一致するデザインをご提案します。</p></li>
+                  <li><span>コーディング</span><p>作成したデザインに基づいた、公開用のWebサイトを構築します。</p></li>
+                  <li><span>WordPress</span><p>作成したサイトのコンテンツをお客様自身で更新・変更できるように、CMS(コンテンツ・マネジメント・システム)を構築します。</p></li>
+                </ul>
+                <p>※ご希望によって必要な作業を御承り致します。</p>
+                <div class="sitecreate-close-btn modal-close-btn"><span>閉じる</span></div>
               </div>
             </div>
           </li>
@@ -77,8 +90,19 @@
                   <div class="service-item-description"><p>Webサイトは作成して終わりではありません。作った先にある目的の達成まで一緒にさせてください。<br><br>
                     お客様のサイト制作の目的に合わせた、集客・成約・売上に貢献する施策を一緒に考えていきましょう。</p>
                     </div>
-                  <div class="service-btn cmn-btn"><a href="#">webマーケティングについて</a></div>
+                  <div class="service-btn cmn-btn marketing-btn"><span>webマーケティングについて</span></div>
                 </div>
+              </div>
+            </div>
+            <div class="service-modal marketing-modal">
+              <div class="modal-container">
+                <h3>- Webマーケティング -</h3>
+                <ul class="modal-discription">
+                  <li><span>SEO</span><p>検索エンジンの最適化を行い、お客様のサイトのニーズに応じた集客をお手伝いします。</p></li>
+                  <li><span>LPO</span><p>ターゲット層の選定や検索キーワードの選定、コピーライティングのご提案まで、ランディングページにて成約率に貢献するお手伝いをさせていただきます。</p></li>
+                  <li><span>SNS・広告運用</span><p>リスティング広告運用の代行や、Twitter・Instagram等のSNS運用代行にて、お客様のサイトを多くの人に周知するお手伝いをします。</p></li>
+                </ul>
+                <div class="marketing-close-btn modal-close-btn"><span>閉じる</span></div>
               </div>
             </div>
           </li>
@@ -90,8 +114,19 @@
                   <div class="service-item-description"><p>ご不明点などはどんなに細かい点でもご相談ください。<br><br>
                     お客様がご納得いただけるまで一緒に考えさせていただきます。
                     またご希望であれば、こちらからもどんどん提案策を出させていただきます。</p></div>
-                  <div class="service-btn cmn-btn"><a href="#">サポートについて</a></div>
+                  <div class="service-btn cmn-btn support-btn"><span>サポートについて</span></div>
                 </div>
+              </div>
+            </div>
+            <div class="service-modal support-modal">
+              <div class="modal-container">
+                <h3>- サポート -</h3>
+                <ul class="modal-discription">
+                  <li><span>万全のサポート体制</span><p>Web周り知識のないお客様でも理解していただけるように、丁寧で分かりやすいをモットーにした説明でご対応させていただきます。</p></li>
+                  <li><span>ご提案</span><p>ヒアリングを行なった上で、ご希望であれば、こちらからデザインや文言等のご提案をご用意させていただきます。</p></li>
+                  <li><span>アフターサポート</span><p>納品後、２週間は無償で修正等の対応をさせていただきます。</p></li>
+                </ul>
+                <div class="support-close-btn modal-close-btn"><span>閉じる</span></div>
               </div>
             </div>
           </li>
@@ -99,7 +134,7 @@
       </div>
     </section>
 
-    <section class="price-section">
+    <section class="price-section cmn-section" id="price">
       <div class="price-title cmn-title">
         <h2>料金目安</h2>
         <h2>- price -</h2>
@@ -117,7 +152,7 @@
                 <dd>¥30,000/1p〜</dd>
               </dl>
             </div>
-            <img src=" https://yuyaaaaaaa.github.io/Webseisakuya/images/色えんぴつ.jpg" alt="デザインイメージ">
+            <img src="/images/色えんぴつ.jpg" alt="デザインイメージ">
           </li>
           <li class="price-item">
             <div class="price-container">
@@ -132,7 +167,7 @@
                 <dd>¥50,000/1p〜</dd>
               </dl>
             </div>
-            <img src=" https://yuyaaaaaaa.github.io/Webseisakuya/images/codingPC.jpg" alt="コーディングイメージ">
+            <img src="/images/codingPC.jpg" alt="コーディングイメージ">
           </li>
           <li class="price-item">
             <div class="price-container">
@@ -145,7 +180,7 @@
                 <dd>¥80,000〜</dd>
               </dl>
             </div>
-            <img src=" https://yuyaaaaaaa.github.io/Webseisakuya/images/wordpress-アイコン.jpg" alt="ワードプレスイメージ">
+            <img src="/images/wordpress-アイコン.jpg" alt="ワードプレスイメージ">
           </li>
           <li class="price-item">
             <div class="price-container">
@@ -157,13 +192,13 @@
                 <p>その他Web関連業務</p>
               </dl>
             </div>
-            <img src=" https://yuyaaaaaaa.github.io/Webseisakuya/images/GOOD VIBES ONLY.jpg" alt="その他業務料金イメージ">
+            <img src="/images/GOOD VIBES ONLY.jpg" alt="その他業務料金イメージ">
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="works-section">
+    <section class="works-section cmn-section" id="works">
       <div class="works-title cmn-title">
         <h2>実績</h2>
         <h2>- works -</h2>
@@ -172,21 +207,21 @@
         <div class="works-item">
           <span class="works-item-title">- 温泉旅館サンプルサイト -</span>
           <div class="works-container">
-            <img src=" https://yuyaaaaaaa.github.io/Webseisakuya/images/極楽亭フルスクショ.png" alt="温泉旅館サンプルサイト">
+            <img src="/images/極楽亭フルスクショ.png" alt="温泉旅館サンプルサイト">
           </div>
         </div>
         <div class="works-item">
           <span class="works-item-title">サンプルサイト</span>
-          <div class="works-container"><img src=" https://yuyaaaaaaa.github.io/Webseisakuya/images/極楽亭フルスクショ.png" alt=""></div>
+          <div class="works-container"><img src="/images/極楽亭フルスクショ.png" alt=""></div>
         </div>
         <div class="works-item">
           <span class="works-item-title">サンプルサイト</span>
-          <div class="works-container"><img src=" https://yuyaaaaaaa.github.io/Webseisakuya/images/極楽亭フルスクショ.png" alt=""></div>
+          <div class="works-container"><img src="/images/極楽亭フルスクショ.png" alt=""></div>
         </div>
       </div>
     </section>
 
-    <section class="flow-section">
+    <section class="flow-section cmn-section" id ="flow">
       <div class="flow-title cmn-title">
         <h2>作成の流れ</h2>
         <h2>- flow -</h2>
@@ -247,7 +282,7 @@
       </div>
     </section>
 
-    <section class="last-section">
+    <section class="last-section cmn-section" id="last">
       <div class="last-image">
         <div class="last-wrap">
           <em class="last-message">お気軽にお問い合わせください</em>
@@ -277,7 +312,7 @@
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src=" https://yuyaaaaaaa.github.io/Webseisakuya/js/AOS-dist/aos.js"></script>
-  <script src=" https://yuyaaaaaaa.github.io/Webseisakuya/js/script.js"></script>
+  <script src="js/AOS-dist/aos.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 </html>

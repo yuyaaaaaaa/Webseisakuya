@@ -1,29 +1,53 @@
 .top {
-  padding-top: 82px;
+  padding-top: 70px;
   @include sp {
     padding-top: 68px;
   }
 }
 
 .top-image {
-  background-image: url('/images/Website会議風_Fotor.jpg');
+  background-image: url('../images/Website会議風_Fotor.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   height: 700px;
   position: relative;
+  @include min {
+    height: 550px;
+  }
+}
+
+.catch-copy {
+  color: cl(white);
+  font-size: 35px;
+  font-weight: bold;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  @include sp {
+    font-size: 25px;
+    @include min {
+      font-size: 16px;
+      right: 0;
+      left: 0;
+    }
+  }
 }
 
 .top-container {
   background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid cl(text);
   position: absolute;
-  top: 250px;
+  top: 230px;
   height: 330px;
   width: 100%;
   padding-top: 50px;
   @include sp {
     text-align: center;
+    top: 200px;
+    @include min {
+      top: 120px;
+    }
   }
   .top-message {
     padding-left: 15px;

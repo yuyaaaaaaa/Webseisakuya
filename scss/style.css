@@ -19,15 +19,20 @@ li {
   list-style: none;
 }
 
+.cmn-section {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .cmn-btn {
   background-color: #F0E9E9;
   border-radius: 18px;
   border: 1px solid #707070;
   display: inline-block;
-  transition: all 0.5s ease;
+  cursor: pointer;
 }
 
-.cmn-btn a {
+.cmn-btn span {
   transition: all 0.5s ease;
 }
 
@@ -35,7 +40,7 @@ li {
   background-color: #e5c2c2;
 }
 
-.cmn-btn:hover a {
+.cmn-btn:hover span {
   color: #ffff;
 }
 
@@ -199,6 +204,7 @@ li {
 
 .footer {
   display: flex;
+  background-color: #F0E9E9;
 }
 
 @media print, screen and (max-width: 400px) {
@@ -304,7 +310,7 @@ li {
 }
 
 .top {
-  padding-top: 82px;
+  padding-top: 70px;
 }
 
 @media print, screen and (max-width: 767px) {
@@ -314,7 +320,7 @@ li {
 }
 
 .top-image {
-  background-image: url(" https://yuyaaaaaaa.github.io/Webseisakuya/images/Website会議風_Fotor.jpg");
+  background-image: url("../images/Website会議風_Fotor.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -322,11 +328,40 @@ li {
   position: relative;
 }
 
+@media print, screen and (max-width: 400px) {
+  .top-image {
+    height: 550px;
+  }
+}
+
+.catch-copy {
+  color: #ffff;
+  font-size: 35px;
+  font-weight: bold;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+}
+
+@media print, screen and (max-width: 767px) {
+  .catch-copy {
+    font-size: 25px;
+  }
+}
+
+@media print, screen and (max-width: 767px) and (max-width: 400px) {
+  .catch-copy {
+    font-size: 16px;
+    right: 0;
+    left: 0;
+  }
+}
+
 .top-container {
   background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid #707070;
   position: absolute;
-  top: 250px;
+  top: 230px;
   height: 330px;
   width: 100%;
   padding-top: 50px;
@@ -335,6 +370,13 @@ li {
 @media print, screen and (max-width: 767px) {
   .top-container {
     text-align: center;
+    top: 200px;
+  }
+}
+
+@media print, screen and (max-width: 767px) and (max-width: 400px) {
+  .top-container {
+    top: 120px;
   }
 }
 
@@ -451,6 +493,13 @@ li {
   }
 }
 
+@media print, screen and (max-width: 767px) and (max-width: 400px) {
+  .service-section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
 .service-title {
   border-bottom: 3px solid #F0E9E9;
   width: 70%;
@@ -472,6 +521,7 @@ li {
 
 .service-wrap .service-list .service-item {
   width: 34%;
+  position: relative;
 }
 
 @media print, screen and (max-width: 767px) {
@@ -481,12 +531,12 @@ li {
 }
 
 .service-wrap .service-list .service-item:nth-child(even) {
-  padding: 0 20px;
+  margin: 0 20px;
 }
 
 @media print, screen and (max-width: 767px) {
   .service-wrap .service-list .service-item:nth-child(even) {
-    padding: 15px 0;
+    margin: 15px 0;
   }
 }
 
@@ -504,20 +554,20 @@ li {
 
 @media print, screen and (max-width: 767px) and (max-width: 400px) {
   .service-wrap .service-list .service-item .service-image {
-    height: 370px;
+    height: 340px;
   }
 }
 
-.service-wrap .service-list .service-item .service-image.sitecliate {
-  background-image: url(" https://yuyaaaaaaa.github.io/Webseisakuya/images/WEBSITE.jpg");
+.service-wrap .service-list .service-item .service-image.sitecreate {
+  background-image: url("../images/WEBSITE.jpg");
 }
 
 .service-wrap .service-list .service-item .service-image.webmarketing {
-  background-image: url(" https://yuyaaaaaaa.github.io/Webseisakuya/images/MARKETING&STRATEGY.jpg");
+  background-image: url("../images/MARKETING&STRATEGY.jpg");
 }
 
 .service-wrap .service-list .service-item .service-image.support {
-  background-image: url(" https://yuyaaaaaaa.github.io/Webseisakuya/images/PC&MIC.jpg");
+  background-image: url("../images/PC&MIC.jpg");
 }
 
 .service-wrap .service-list .service-item .service-image .service-color {
@@ -543,6 +593,12 @@ li {
   text-transform: capitalize;
 }
 
+@media print, screen and (max-width: 400px) {
+  .service-wrap .service-list .service-item .service-image .service-color .service-item-container .service-item-title {
+    font-size: 20px;
+  }
+}
+
 .service-wrap .service-list .service-item .service-image .service-color .service-item-container .service-item-description {
   font-size: 18px;
   color: #000;
@@ -554,7 +610,8 @@ li {
 
 @media print, screen and (max-width: 400px) {
   .service-wrap .service-list .service-item .service-image .service-color .service-item-container .service-item-description {
-    font-size: 16px;
+    font-size: 14px;
+    padding: 30px 12px 0 12px;
   }
 }
 
@@ -567,6 +624,94 @@ li {
   .service-wrap .service-list .service-item .service-image .service-color .service-item-container .service-btn {
     margin-top: 18px;
   }
+  .service-wrap .service-list .service-item .service-image .service-color .service-item-container .service-btn span {
+    font-size: 15px;
+  }
+}
+
+.service-wrap .service-list .service-modal {
+  display: none;
+  font-family: "Hiragino Maru Gothic ProN";
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.service-wrap .service-list .service-modal .modal-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.service-wrap .service-list .service-modal .modal-container h3 {
+  color: #ffff;
+  font-weight: 900;
+  font-size: 22px;
+  padding-top: 30px;
+}
+
+@media print, screen and (max-width: 400px) {
+  .service-wrap .service-list .service-modal .modal-container h3 {
+    font-size: 17px;
+    padding-top: 22px;
+  }
+}
+
+.service-wrap .service-list .service-modal .modal-container .modal-discription li {
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-wrap .service-list .service-modal .modal-container .modal-discription li span {
+  font-size: 18px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+@media print, screen and (max-width: 400px) {
+  .service-wrap .service-list .service-modal .modal-container .modal-discription li span {
+    font-size: 14px;
+    padding-top: 13px;
+  }
+}
+
+.service-wrap .service-list .service-modal .modal-container .modal-discription li span::before, .service-wrap .service-list .service-modal .modal-container .modal-discription li span::after {
+  content: '';
+  border: 1px solid #ffff;
+  flex-grow: 1;
+}
+
+.service-wrap .service-list .service-modal .modal-container p {
+  color: #ffff;
+  padding-top: 10px;
+  text-align: left;
+}
+
+@media print, screen and (max-width: 400px) {
+  .service-wrap .service-list .service-modal .modal-container p {
+    font-size: 12px;
+  }
+}
+
+.service-wrap .service-list .service-modal .modal-container .modal-close-btn {
+  background-color: #ffff;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.service-wrap .service-list .service-modal .modal-container .modal-close-btn:hover {
+  background-color: #707070;
+}
+
+.service-wrap .service-list .service-modal .modal-container .modal-close-btn:hover span {
+  color: #ffff;
 }
 
 .service-item-title {
@@ -822,6 +967,7 @@ li {
 }
 
 .works-wrap .works-item .works-item-title {
+  color: #000;
   font-size: 23px;
   font-weight: bold;
   background: repeating-linear-gradient(-45deg, transparent 0 2px, #e5c2c2 2px 5px);
@@ -952,6 +1098,14 @@ li {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 320px;
+    font-size: 24px;
+  }
+}
+
+@media print, screen and (max-width: 767px) and (max-width: 400px) {
+  .flow-list .flow-item .flow-step-description {
+    font-size: 18px;
+    width: 90%;
   }
 }
 
@@ -976,11 +1130,22 @@ li {
   }
 }
 
+.last-section {
+  margin-top: 30px;
+  width: 100%;
+}
+
 .last-image {
-  background-image: url(" https://yuyaaaaaaa.github.io/Webseisakuya/images/Website会議風_Fotor.jpg");
+  background-image: url("../images/Website会議風_Fotor.jpg");
   background-size: cover;
   background-position: center;
   height: 600px;
+}
+
+@media print, screen and (max-width: 400px) {
+  .last-image {
+    height: 530px;
+  }
 }
 
 .last-wrap {
@@ -988,6 +1153,12 @@ li {
   height: 470px;
   text-align: center;
   padding-top: 50px;
+}
+
+@media print, screen and (max-width: 400px) {
+  .last-wrap {
+    height: 400px;
+  }
 }
 
 .last-wrap .last-message {
@@ -1013,6 +1184,13 @@ li {
 @media print, screen and (max-width: 767px) {
   .last-wrap .last-submessage {
     font-size: 23px;
+  }
+}
+
+@media print, screen and (max-width: 767px) and (max-width: 400px) {
+  .last-wrap .last-submessage {
+    font-size: 19px;
+    padding-top: 70px;
   }
 }
 

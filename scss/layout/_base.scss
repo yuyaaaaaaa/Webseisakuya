@@ -11,6 +11,11 @@ $colors: (
   @return map-get($colors, $key);
 }
 
+// FONT-FAMILY
+@function ff() {
+  @return 'Hiragino Maru Gothic ProN';
+}
+
 // RESPONSIVE_SP
 @mixin min {
   @media print,screen and (max-width: 400px) {
