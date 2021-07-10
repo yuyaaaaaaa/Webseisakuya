@@ -1,0 +1,36 @@
+// COLORS
+$colors: (
+  base: #F0E9E9,
+  text: #707070,
+  hover: #e5c2c2,
+  white: #ffff,
+  black: #0000,
+);
+
+@function cl($key) {
+  @return map-get($colors, $key);
+}
+
+// FONT-FAMILY
+@function ff() {
+  @return 'Hiragino Maru Gothic ProN';
+}
+
+// RESPONSIVE_SP
+@mixin min {
+  @media print,screen and (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media print,screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media print,screen and (min-width: 768px) {
+    @content;
+  }
+}

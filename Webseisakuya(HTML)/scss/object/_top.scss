@@ -1,0 +1,125 @@
+.top {
+  padding-top: 70px;
+  @include sp {
+    padding-top: 68px;
+  }
+}
+
+.top-image {
+  background-image: url('../images/Website会議風_Fotor.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 700px;
+  position: relative;
+  @include min {
+    height: 550px;
+  }
+}
+
+.catch-copy {
+  color: cl(white);
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  @include sp {
+    font-size: 25px;
+    @include min {
+      font-size: 16px;
+      right: 0;
+      left: 0;
+    }
+  }
+}
+
+.top-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid cl(text);
+  position: absolute;
+  top: 230px;
+  height: 330px;
+  width: 100%;
+  padding-top: 50px;
+  @include sp {
+    text-align: center;
+    top: 200px;
+    @include min {
+      top: 120px;
+    }
+  }
+  .top-message {
+    padding-left: 25px;
+    font-weight: bold;
+    @include sp {
+      text-align: left;
+    }
+    .top-1 {
+      font-size: 55px;
+      text-shadow: 0px 11px 20px rgb(158, 155, 155);
+      background: linear-gradient(transparent 75%, cl(hover));
+      @include sp {
+        font-size: 35px;
+      }
+    }
+    .top-2 {
+      font-size: 38px;
+      @include sp {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+.top-description {
+  padding-top: 40px;
+  padding-left: 95px;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  @include sp {
+    padding-left: 5px;
+    display: inline-block;
+  }
+  p {
+    font-weight: bold;
+    font-size: 30px;
+    &:nth-child(2) {
+      padding-top: 30px;
+      background: linear-gradient(transparent 80%, cl(hover));
+    }
+    @include sp {
+      font-size: 20px;
+      margin-left: 10px;
+    }
+    @media(max-width: 400px) {
+      font-size: 12px;
+      margin-left: 10px;
+    }
+  }
+  .top-contact-btn {
+    display: flex;
+    margin-right: 70px;
+    a {
+      font-size: 38px;
+      padding: 18px 52px;
+    }
+    @include sp {
+      margin: 30px auto 0 auto;
+      display: inline-block;
+      a {
+        display: inline-block;
+        font-size: 25px;
+        padding: 16px 27px;
+      }
+    }
+  }
+}
+
+.top-discription-wrap {
+  @include sp {
+    text-align: left;
+  }
+}

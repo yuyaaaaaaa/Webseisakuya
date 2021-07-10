@@ -1,0 +1,97 @@
+.flow-section {
+  background-color: cl(base);
+  padding-top: 40px;
+  padding-bottom: 50px;
+  @include sp {
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+}
+
+.flow-title {
+  border-bottom: 3px solid cl(white);
+  width: 70%;
+  margin: 0 auto;
+}
+
+.flow-list-top {
+  display: flex;
+  @include sp {
+    display: block;
+  }
+}
+
+.flow-list-bottom {
+  display: flex;
+  @include sp {
+    display: block;
+  }
+}
+
+.flow-list {
+  text-align: center;
+  justify-content: space-around;
+  padding: 0 30px;
+  @include sp {
+    flex-direction: column;
+    padding: 0;
+  }
+  .flow-item {
+    padding-top: 58px;
+    @include sp {
+      padding-top: 0;
+      &:first-child {
+        padding-top: 30px;
+      }
+    }
+    .flow-step {
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .flow-step-content {
+      padding-top: 21px;
+      font-size: 22px;
+      font-weight: bold;
+      background: linear-gradient(transparent 70%, cl(hover));
+      border-radius: 6px;
+      display: inline-block;
+      @include sp {
+        padding-top: 17px;
+      }
+    }
+    .flow-step-description {
+      padding-top: 25px;
+      font-size: 18px;
+      width: 260px;
+      line-height: 1.5;
+      text-align: left;
+      margin: 0 auto;
+      @include sp {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 320px;
+        font-size: 20px;
+        @include min {
+          font-size: 18px;
+          width: 90%;
+        }
+      }
+    }
+  }
+  span {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    @include sp {
+      transform: rotate(90deg);
+      display: inline-flex;
+      margin: 0 auto;
+      font-size: 60px;
+    }
+  }
+  .flow4 {
+    @include pc {
+      display: none;
+    }
+  }
+}

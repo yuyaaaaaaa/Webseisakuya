@@ -1,0 +1,191 @@
+.service-section {
+  padding-top: 40px;
+  padding-bottom: 70px;
+  @include sp {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include min {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+  }
+}
+
+.service-title {
+  border-bottom: 3px solid cl(base);
+  width: 50%;
+  margin: 0 auto;
+}
+
+.service-wrap {
+  .service-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    @include sp {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 40px 0 40px;
+    }
+    .service-item {
+      position: relative;
+      cursor: pointer;
+      &:nth-child(even) {
+        margin: 0 20px;
+        @include sp {
+          margin: 15px 0;
+        }
+      }
+      .service-image {
+        width: 350px;
+        height: 400px;
+        background-size: cover;
+        border: 1px solid cl(text);
+        @include sp {
+          height: 360px;
+          @include min {
+            height: 340px;
+          }
+        }
+        &.sitecreate {
+          background-image: url('../images/WEBSITE.jpg');
+        }
+        &.webmarketing {
+          background-image: url('../images/MARKETING&STRATEGY.jpg');
+        }
+        &.support {
+          background-image: url('../images/PC&MIC.jpg');
+        }
+        .service-color {
+          background-color: rgba(255,255,255,0.8);
+          height: 100%;
+          .service-item-container {
+            padding-top: 40px;
+            text-align: center;
+            @include sp {
+              padding-top: 29px;
+              @include min {
+                padding-top: 20px;
+              }
+            }
+            .service-item-title {
+              font-size: 28px;
+              color: #000;
+              font-weight: bold;
+              text-transform: capitalize;
+              @include sp {
+                font-size: 22px;
+                @include min {
+                  font-size: 20px;
+                }
+              }
+            }
+            .service-item-description {
+              font-size: 18px;
+              color: #000;
+              font-weight: bold;
+              padding: 45px 15px 0 15px;
+              line-height: 1.5;
+              text-align: left;
+              @include sp {
+                font-size: 16px;
+                padding: 40px 15px 0 15px;
+                @include min {
+                  font-size: 14px;
+                  padding: 30px 12px 0 12px;
+                }
+              }
+            }
+            .service-btn {
+              margin-top: 30px;
+              padding: 10px 5px;
+              @include min {
+                margin-top: 18px;
+                span {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // モーダル
+    .service-modal {
+      display: none;
+      font-family: ff();
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.9);
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      .modal-container {
+        width: 90%;
+        margin: 0 auto;
+        h3 {
+          color: cl(white);
+          font-size: 22px;
+          padding-top: 25px;
+          @include sp {
+            font-size: 19px;
+            padding-top: 22px;
+          }
+        }
+        .modal-discription {
+          li {
+            color: cl(white);
+            display: flex;
+            flex-direction: column;
+            span {
+              font-size: 17px;
+              padding-top: 20px;
+              display: flex;
+              align-items: center;
+              @include sp {
+                font-size: 16px;
+              }
+              &::before, &::after{
+                content: '';
+                border: 1px solid cl(white);
+                flex-grow: 1;
+              }
+            }
+          }
+        }
+        p {
+          color: cl(white);
+          padding-top: 10px;
+          text-align: left;
+          font-size: 15px;
+          @include sp {
+            font-size: 14px;
+          }
+        }
+        .modal-close-btn {
+          background-color: cl(white);
+          padding: 8px 20px;
+          cursor: pointer;
+          transition: all 0.5s ease;
+          position: absolute;
+          right: 130px;
+          bottom: 12px;
+          &:hover {
+            background-color: cl(text);
+            span {
+              color: cl(white);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// アンダーライン
+.service-item-title {
+  background: repeating-linear-gradient(-45deg, transparent 0 2px, cl(hover) 2px 6px);
+  background-size: 100% .6em;
+  padding-bottom: .6em;
+  background-position: 0 center;
+  background-repeat: no-repeat;
+}
