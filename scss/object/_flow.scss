@@ -1,10 +1,10 @@
 .flow-section {
   background-color: cl(base);
-  padding-top: 50px;
-  padding-bottom: 90px;
+  padding-top: 40px;
+  padding-bottom: 50px;
   @include sp {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 25px;
+    padding-bottom: 20px;
   }
 }
 
@@ -45,12 +45,12 @@
       }
     }
     .flow-step {
-      font-size: 40px;
+      font-size: 32px;
       font-weight: bold;
     }
     .flow-step-content {
       padding-top: 21px;
-      font-size: 25px;
+      font-size: 22px;
       font-weight: bold;
       background: linear-gradient(transparent 70%, cl(hover));
       border-radius: 6px;
@@ -60,7 +60,7 @@
       }
     }
     .flow-step-description {
-      padding-top: 35px;
+      padding-top: 25px;
       font-size: 18px;
       width: 260px;
       line-height: 1.5;
@@ -70,7 +70,7 @@
         padding-top: 20px;
         padding-bottom: 20px;
         width: 320px;
-        font-size: 24px;
+        font-size: 20px;
         @include min {
           font-size: 18px;
           width: 90%;

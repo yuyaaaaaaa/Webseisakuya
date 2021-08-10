@@ -16,24 +16,11 @@ jQuery(function() {
     $("html,body").animate({scrollTop: position});
   });
 
-  $('.sitecreate-btn').on('click', function() {
-    $('.sitecreate-modal').slideDown();
+  // サービスモーダル
+  $('.service-btn').click(function() {
+    $(this).parents('.service-item').find('.service-modal').slideDown();
   });
-  $('.sitecreate-close-btn').on('click', function() {
-    $('.sitecreate-modal').slideUp();
-  });
-
-  $('.marketing-btn').on('click', function() {
-    $('.marketing-modal').slideDown();
-  });
-  $('.marketing-close-btn').on('click', function() {
-    $('.marketing-modal').slideUp();
-  });
-
-  $('.support-btn').on('click', function() {
-    $('.support-modal').slideDown();
-  });
-  $('.support-close-btn').on('click', function() {
-    $('.support-modal').slideUp();
+  $('.modal-close-btn').click(function() {
+    $(this).parents('.service-modal').slideUp();
   });
 });

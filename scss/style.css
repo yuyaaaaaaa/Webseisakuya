@@ -20,7 +20,7 @@ li {
 }
 
 .cmn-section {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -30,42 +30,55 @@ li {
   border: 1px solid #707070;
   display: inline-block;
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
 }
 
-.cmn-btn a {
-  transition: all 0.5s ease;
+.cmn-btn span {
+  transition: all 0.5s ease-in-out;
 }
 
 .cmn-btn:hover {
   background-color: #e5c2c2;
 }
 
-.cmn-btn:hover a {
+.cmn-btn:hover a, .cmn-btn:hover span {
   color: #ffff;
 }
 
 .cmn-title {
   text-align: center;
+  font-weight: bold;
 }
 
 .cmn-title h2:nth-child(1) {
   font-size: 40px;
 }
 
+@media print, screen and (max-width: 767px) {
+  .cmn-title h2:nth-child(1) {
+    font-size: 30px;
+  }
+}
+
 .cmn-title h2:nth-child(2) {
   font-size: 20px;
   padding-top: 10px;
+  padding-bottom: 8px;
   text-transform: capitalize;
 }
 
 .header {
   background-color: #F0E9E9;
-  display: flex;
   position: fixed;
   width: 100%;
   z-index: 3;
   border-bottom: 1px solid #707070;
+}
+
+.header-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
 }
 
 .image-logo a img {
@@ -321,7 +334,7 @@ li {
 }
 
 .top-image {
-  background-image: url("https://yuyaaaaaaa.github.io/Webseisakuya/images/Website会議風_Fotor.jpg");
+  background-image: url("../images/Website会議風_Fotor.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -337,11 +350,11 @@ li {
 
 .catch-copy {
   color: #ffff;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: bold;
   position: absolute;
   top: 50px;
-  right: 30px;
+  right: 50px;
 }
 
 @media print, screen and (max-width: 767px) {
@@ -382,7 +395,8 @@ li {
 }
 
 .top-container .top-message {
-  padding-left: 15px;
+  padding-left: 25px;
+  font-weight: bold;
 }
 
 @media print, screen and (max-width: 767px) {
@@ -392,8 +406,7 @@ li {
 }
 
 .top-container .top-message .top-1 {
-  font-size: 70px;
-  font-weight: bold;
+  font-size: 55px;
   text-shadow: 0px 11px 20px #9e9b9b;
   background: linear-gradient(transparent 75%, #e5c2c2);
 }
@@ -405,7 +418,7 @@ li {
 }
 
 .top-container .top-message .top-2 {
-  font-size: 50px;
+  font-size: 38px;
 }
 
 @media print, screen and (max-width: 767px) {
@@ -460,8 +473,8 @@ li {
 }
 
 .top-description .top-contact-btn a {
-  font-size: 40px;
-  padding: 12px 18px;
+  font-size: 38px;
+  padding: 18px 52px;
 }
 
 @media print, screen and (max-width: 767px) {
@@ -470,8 +483,9 @@ li {
     display: inline-block;
   }
   .top-description .top-contact-btn a {
+    display: inline-block;
     font-size: 25px;
-    padding: 23px 40px;
+    padding: 16px 27px;
   }
 }
 
@@ -482,8 +496,8 @@ li {
 }
 
 .service-section {
-  padding-top: 60px;
-  padding-bottom: 100px;
+  padding-top: 40px;
+  padding-bottom: 70px;
 }
 
 @media print, screen and (max-width: 767px) {
@@ -502,13 +516,14 @@ li {
 
 .service-title {
   border-bottom: 3px solid #F0E9E9;
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
 }
 
 .service-wrap .service-list {
   display: flex;
-  padding: 54px 65px 0 65px;
+  justify-content: center;
+  padding-top: 30px;
 }
 
 @media print, screen and (max-width: 767px) {
@@ -520,14 +535,8 @@ li {
 }
 
 .service-wrap .service-list .service-item {
-  width: 34%;
   position: relative;
-}
-
-@media print, screen and (max-width: 767px) {
-  .service-wrap .service-list .service-item {
-    width: 100%;
-  }
+  cursor: pointer;
 }
 
 .service-wrap .service-list .service-item:nth-child(even) {
@@ -541,14 +550,15 @@ li {
 }
 
 .service-wrap .service-list .service-item .service-image {
-  height: 430px;
+  width: 350px;
+  height: 400px;
   background-size: cover;
   border: 1px solid #707070;
 }
 
 @media print, screen and (max-width: 767px) {
   .service-wrap .service-list .service-item .service-image {
-    height: 400px;
+    height: 360px;
   }
 }
 
@@ -580,7 +590,13 @@ li {
   text-align: center;
 }
 
-@media print, screen and (max-width: 400px) {
+@media print, screen and (max-width: 767px) {
+  .service-wrap .service-list .service-item .service-image .service-color .service-item-container {
+    padding-top: 29px;
+  }
+}
+
+@media print, screen and (max-width: 767px) and (max-width: 400px) {
   .service-wrap .service-list .service-item .service-image .service-color .service-item-container {
     padding-top: 20px;
   }
@@ -593,7 +609,13 @@ li {
   text-transform: capitalize;
 }
 
-@media print, screen and (max-width: 400px) {
+@media print, screen and (max-width: 767px) {
+  .service-wrap .service-list .service-item .service-image .service-color .service-item-container .service-item-title {
+    font-size: 22px;
+  }
+}
+
+@media print, screen and (max-width: 767px) and (max-width: 400px) {
   .service-wrap .service-list .service-item .service-image .service-color .service-item-container .service-item-title {
     font-size: 20px;
   }
@@ -608,7 +630,14 @@ li {
   text-align: left;
 }
 
-@media print, screen and (max-width: 400px) {
+@media print, screen and (max-width: 767px) {
+  .service-wrap .service-list .service-item .service-image .service-color .service-item-container .service-item-description {
+    font-size: 16px;
+    padding: 40px 15px 0 15px;
+  }
+}
+
+@media print, screen and (max-width: 767px) and (max-width: 400px) {
   .service-wrap .service-list .service-item .service-image .service-color .service-item-container .service-item-description {
     font-size: 14px;
     padding: 30px 12px 0 12px;
@@ -616,7 +645,7 @@ li {
 }
 
 .service-wrap .service-list .service-item .service-image .service-color .service-item-container .service-btn {
-  margin-top: 35px;
+  margin-top: 30px;
   padding: 10px 5px;
 }
 
@@ -647,14 +676,13 @@ li {
 
 .service-wrap .service-list .service-modal .modal-container h3 {
   color: #ffff;
-  font-weight: 900;
   font-size: 22px;
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
-@media print, screen and (max-width: 400px) {
+@media print, screen and (max-width: 767px) {
   .service-wrap .service-list .service-modal .modal-container h3 {
-    font-size: 17px;
+    font-size: 19px;
     padding-top: 22px;
   }
 }
@@ -666,16 +694,15 @@ li {
 }
 
 .service-wrap .service-list .service-modal .modal-container .modal-discription li span {
-  font-size: 18px;
+  font-size: 17px;
   padding-top: 20px;
   display: flex;
   align-items: center;
 }
 
-@media print, screen and (max-width: 400px) {
+@media print, screen and (max-width: 767px) {
   .service-wrap .service-list .service-modal .modal-container .modal-discription li span {
-    font-size: 14px;
-    padding-top: 13px;
+    font-size: 16px;
   }
 }
 
@@ -689,21 +716,23 @@ li {
   color: #ffff;
   padding-top: 10px;
   text-align: left;
+  font-size: 15px;
 }
 
-@media print, screen and (max-width: 400px) {
+@media print, screen and (max-width: 767px) {
   .service-wrap .service-list .service-modal .modal-container p {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
 .service-wrap .service-list .service-modal .modal-container .modal-close-btn {
   background-color: #ffff;
-  display: inline-block;
   padding: 8px 20px;
-  margin-top: 15px;
   cursor: pointer;
   transition: all 0.5s ease;
+  position: absolute;
+  right: 130px;
+  bottom: 12px;
 }
 
 .service-wrap .service-list .service-modal .modal-container .modal-close-btn:hover {
@@ -725,19 +754,20 @@ li {
 .price-section {
   background-color: #F0E9E9;
   padding-top: 30px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
+  border: 1px solid #707070;
 }
 
 .price-title {
   border-bottom: 3px solid #ffff;
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
 }
 
 .price-list {
   display: flex;
   justify-content: space-around;
-  padding-top: 65px;
+  padding-top: 55px;
 }
 
 @media print, screen and (max-width: 767px) {
@@ -767,7 +797,7 @@ li {
     width: 50%;
   }
   .price-list .price-item:nth-child(n+3) {
-    padding-top: 50px;
+    padding-top: 40px;
   }
 }
 
@@ -776,8 +806,8 @@ li {
 }
 
 .price-list .price-item .price-container .price-item-title {
-  padding-top: 38px;
-  font-size: 25px;
+  padding-top: 30px;
+  font-size: 22px;
   font-weight: bold;
   background: linear-gradient(transparent 80%, #e5c2c2);
   border-radius: 6px;
@@ -786,7 +816,7 @@ li {
 
 @media print, screen and (max-width: 767px) {
   .price-list .price-item .price-container .price-item-title {
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 13px;
   }
 }
@@ -800,21 +830,15 @@ li {
   border-bottom-color: transparent;
   border-right-color: transparent;
   margin: 0 auto;
-  margin-top: 20px;
-}
-
-@media print, screen and (max-width: 767px) {
-  .price-list .price-item .price-container .price-arrow {
-    margin-top: 14px;
-  }
+  margin-top: 14px;
 }
 
 .price-list .price-item .price-container .price-item-content {
-  font-size: 15px;
+  font-size: 14px;
   background-color: #e5c2c2;
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -823,16 +847,9 @@ li {
 @media print, screen and (max-width: 767px) {
   .price-list .price-item .price-container .price-item-content {
     font-size: 10px;
-    width: 190px;
-    height: 190px;
+    width: 160px;
+    height: 160px;
     margin-top: -17px;
-  }
-}
-
-@media print, screen and (max-width: 767px) and (max-width: 400px) {
-  .price-list .price-item .price-container .price-item-content {
-    width: 145px;
-    height: 145px;
   }
 }
 
@@ -842,7 +859,7 @@ li {
 
 @media print, screen and (max-width: 767px) {
   .price-list .price-item .price-container .price-item-content dt {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
@@ -860,7 +877,7 @@ li {
   text-decoration: underline;
   padding-top: 5px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
   text-transform: uppercase;
 }
 
@@ -901,20 +918,13 @@ li {
 
 @media print, screen and (max-width: 767px) {
   .price-list .price-item img {
-    width: 180px;
-    height: 180px;
-  }
-}
-
-@media print, screen and (max-width: 767px) and (max-width: 400px) {
-  .price-list .price-item img {
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
   }
 }
 
 .works-section {
-  padding: 45px 0 93px 0;
+  padding: 40px 0 60px 0;
 }
 
 @media print, screen and (max-width: 767px) {
@@ -931,23 +941,17 @@ li {
 
 .works-title {
   border-bottom: 3px solid #F0E9E9;
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
 }
 
 .works-wrap {
   display: flex;
   justify-content: space-around;
-  padding-top: 60px;
+  padding-top: 45px;
 }
 
 @media print, screen and (max-width: 767px) {
-  .works-wrap {
-    padding-top: 30px;
-  }
-}
-
-@media print and (max-width: 500px), screen and (max-width: 767px) and (max-width: 500px) {
   .works-wrap {
     padding-top: 8px;
     flex-direction: column;
@@ -960,7 +964,7 @@ li {
   width: 30%;
 }
 
-@media (max-width: 500px) {
+@media print, screen and (max-width: 767px) {
   .works-wrap .works-item {
     width: 80%;
   }
@@ -968,18 +972,17 @@ li {
 
 .works-wrap .works-item .works-item-title {
   color: #000;
-  font-size: 23px;
+  font-size: 20px;
   font-weight: bold;
   background: repeating-linear-gradient(-45deg, transparent 0 2px, #e5c2c2 2px 5px);
   background-size: 100% .6em;
-  padding-bottom: .6em;
   background-position: 0 center;
   background-repeat: no-repeat;
   margin-bottom: 10px;
   display: inline-block;
 }
 
-@media (max-width: 500px) {
+@media print, screen and (max-width: 767px) {
   .works-wrap .works-item .works-item-title {
     margin-bottom: 0;
     margin-top: 30px;
@@ -987,8 +990,15 @@ li {
   }
 }
 
+.works-wrap .works-item .works-language {
+  display: inline-block;
+  color: #000;
+  font-size: 18px;
+}
+
 .works-wrap .works-item .works-container {
   height: 470px;
+  margin-top: 10px;
   overflow-y: scroll;
   background-color: #000;
 }
@@ -1001,14 +1011,14 @@ li {
 
 .flow-section {
   background-color: #F0E9E9;
-  padding-top: 50px;
-  padding-bottom: 90px;
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 
 @media print, screen and (max-width: 767px) {
   .flow-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 25px;
+    padding-bottom: 20px;
   }
 }
 
@@ -1065,13 +1075,13 @@ li {
 }
 
 .flow-list .flow-item .flow-step {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: bold;
 }
 
 .flow-list .flow-item .flow-step-content {
   padding-top: 21px;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
   background: linear-gradient(transparent 70%, #e5c2c2);
   border-radius: 6px;
@@ -1085,7 +1095,7 @@ li {
 }
 
 .flow-list .flow-item .flow-step-description {
-  padding-top: 35px;
+  padding-top: 25px;
   font-size: 18px;
   width: 260px;
   line-height: 1.5;
@@ -1098,7 +1108,7 @@ li {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 320px;
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -1136,10 +1146,12 @@ li {
 }
 
 .last-image {
-  background-image: url("https://yuyaaaaaaa.github.io/Webseisakuya/images/Website会議風_Fotor.jpg");
+  background-image: url("../images/Website会議風_Fotor.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 600px;
+  position: relative;
 }
 
 @media print, screen and (max-width: 400px) {
@@ -1150,9 +1162,12 @@ li {
 
 .last-wrap {
   background-color: rgba(255, 255, 255, 0.8);
-  height: 470px;
+  height: 420px;
   text-align: center;
   padding-top: 50px;
+  position: absolute;
+  top: 50px;
+  width: 100%;
 }
 
 @media print, screen and (max-width: 400px) {
@@ -1163,7 +1178,7 @@ li {
 
 .last-wrap .last-message {
   color: #000;
-  font-size: 45px;
+  font-size: 38px;
   font-weight: bold;
 }
 
@@ -1175,10 +1190,10 @@ li {
 
 .last-wrap .last-submessage {
   color: #000;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
   line-height: 1.5;
-  padding-top: 87px;
+  padding-top: 82px;
 }
 
 @media print, screen and (max-width: 767px) {
@@ -1195,18 +1210,18 @@ li {
 }
 
 .last-wrap .last-contact-btn {
-  margin-top: 100px;
-  padding: 30px 160px;
+  margin-top: 70px;
+  padding: 20px 70px;
 }
 
 .last-wrap .last-contact-btn a {
-  font-size: 40px;
+  font-size: 38px;
 }
 
 @media print, screen and (max-width: 767px) {
   .last-wrap .last-contact-btn {
     margin-top: 80px;
-    padding: 30px 100px;
+    padding: 30px 60px;
   }
   .last-wrap .last-contact-btn a {
     font-size: 30px;

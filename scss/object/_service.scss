@@ -1,6 +1,6 @@
 .service-section {
-  padding-top: 60px;
-  padding-bottom: 100px;
+  padding-top: 40px;
+  padding-bottom: 70px;
   @include sp {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -13,25 +13,23 @@
 
 .service-title {
   border-bottom: 3px solid cl(base);
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
 }
 
 .service-wrap {
   .service-list {
     display: flex;
-    padding: 54px 65px 0 65px;
+    justify-content: center;
+    padding-top: 30px;
     @include sp {
       flex-direction: column;
       align-items: center;
       padding: 30px 40px 0 40px;
     }
     .service-item {
-      width: 34%;
       position: relative;
-      @include sp {
-        width: 100%;
-      }
+      cursor: pointer;
       &:nth-child(even) {
         margin: 0 20px;
         @include sp {
@@ -39,11 +37,12 @@
         }
       }
       .service-image {
-        height: 430px;
+        width: 350px;
+        height: 400px;
         background-size: cover;
         border: 1px solid cl(text);
         @include sp {
-          height: 400px;
+          height: 360px;
           @include min {
             height: 340px;
           }
@@ -63,16 +62,22 @@
           .service-item-container {
             padding-top: 40px;
             text-align: center;
-            @include min {
-              padding-top: 20px;
+            @include sp {
+              padding-top: 29px;
+              @include min {
+                padding-top: 20px;
+              }
             }
             .service-item-title {
               font-size: 28px;
               color: #000;
               font-weight: bold;
               text-transform: capitalize;
-              @include min {
-                font-size: 20px;
+              @include sp {
+                font-size: 22px;
+                @include min {
+                  font-size: 20px;
+                }
               }
             }
             .service-item-description {
@@ -82,13 +87,17 @@
               padding: 45px 15px 0 15px;
               line-height: 1.5;
               text-align: left;
-              @include min {
-                font-size: 14px;
-                padding: 30px 12px 0 12px;
+              @include sp {
+                font-size: 16px;
+                padding: 40px 15px 0 15px;
+                @include min {
+                  font-size: 14px;
+                  padding: 30px 12px 0 12px;
+                }
               }
             }
             .service-btn {
-              margin-top: 35px;
+              margin-top: 30px;
               padding: 10px 5px;
               @include min {
                 margin-top: 18px;
@@ -116,11 +125,10 @@
         margin: 0 auto;
         h3 {
           color: cl(white);
-          font-weight: 900;
           font-size: 22px;
-          padding-top: 30px;
-          @include min {
-            font-size: 17px;
+          padding-top: 25px;
+          @include sp {
+            font-size: 19px;
             padding-top: 22px;
           }
         }
@@ -130,13 +138,12 @@
             display: flex;
             flex-direction: column;
             span {
-              font-size: 18px;
+              font-size: 17px;
               padding-top: 20px;
               display: flex;
               align-items: center;
-              @include min {
-                font-size: 14px;
-                padding-top: 13px;
+              @include sp {
+                font-size: 16px;
               }
               &::before, &::after{
                 content: '';
@@ -150,17 +157,19 @@
           color: cl(white);
           padding-top: 10px;
           text-align: left;
-          @include min {
-            font-size: 12px;
+          font-size: 15px;
+          @include sp {
+            font-size: 14px;
           }
         }
         .modal-close-btn {
           background-color: cl(white);
-          display: inline-block;
           padding: 8px 20px;
-          margin-top: 15px;
           cursor: pointer;
           transition: all 0.5s ease;
+          position: absolute;
+          right: 130px;
+          bottom: 12px;
           &:hover {
             background-color: cl(text);
             span {

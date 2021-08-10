@@ -7,7 +7,9 @@
   background-image: url('../images/Website会議風_Fotor.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 600px;
+  position: relative;
   @include min {
     height: 530px;
   }
@@ -15,15 +17,18 @@
 
 .last-wrap {
   background-color: rgba(255, 255, 255, 0.8);
-  height: 470px;
+  height: 420px;
   text-align: center;
   padding-top: 50px;
+  position: absolute;
+  top: 50px;
+  width: 100%;
   @include min {
     height: 400px;
   }
   .last-message {
     color: #000;
-    font-size: 45px;
+    font-size: 38px;
     font-weight: bold;
     @include sp {
       font-size: 35px;
@@ -31,10 +36,10 @@
   }
   .last-submessage {
     color: #000;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     line-height: 1.5;
-    padding-top: 87px;
+    padding-top: 82px;
     @include sp {
       font-size: 23px;
       @include min {
@@ -44,14 +49,14 @@
     }
   }
   .last-contact-btn {
-    margin-top: 100px;
-    padding: 30px 160px;
+    margin-top: 70px;
+    padding: 20px 70px;
     a {
-      font-size: 40px;
+      font-size: 38px;
     }
     @include sp {
       margin-top: 80px;
-      padding: 30px 100px;
+      padding: 30px 60px;
       a {
         font-size: 30px;
       }

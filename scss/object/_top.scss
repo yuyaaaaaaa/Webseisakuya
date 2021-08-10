@@ -19,11 +19,11 @@
 
 .catch-copy {
   color: cl(white);
-  font-size: 35px;
+  font-size: 30px;
   font-weight: bold;
   position: absolute;
   top: 50px;
-  right: 30px;
+  right: 50px;
   @include sp {
     font-size: 25px;
     @include min {
@@ -50,13 +50,13 @@
     }
   }
   .top-message {
-    padding-left: 15px;
+    padding-left: 25px;
+    font-weight: bold;
     @include sp {
       text-align: left;
     }
     .top-1 {
-      font-size: 70px;
-      font-weight: bold;
+      font-size: 55px;
       text-shadow: 0px 11px 20px rgb(158, 155, 155);
       background: linear-gradient(transparent 75%, cl(hover));
       @include sp {
@@ -64,7 +64,7 @@
       }
     }
     .top-2 {
-      font-size: 50px;
+      font-size: 38px;
       @include sp {
         font-size: 25px;
       }
@@ -103,16 +103,16 @@
     display: flex;
     margin-right: 70px;
     a {
-      font-size: 40px;
-      font-weight: bold;
-      padding: 12px 18px;
+      font-size: 38px;
+      padding: 18px 52px;
     }
     @include sp {
       margin: 30px auto 0 auto;
       display: inline-block;
       a {
+        display: inline-block;
         font-size: 25px;
-        padding: 23px 40px;
+        padding: 16px 27px;
       }
     }
   }
